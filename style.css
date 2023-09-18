@@ -1,62 +1,84 @@
+/* CSS code for login page */
+
 body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(0deg,rgba(128, 116, 123, 0.3),rgba(119, 165, 168, 0.3)),url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHRlY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
     margin: 0;
-    padding: 0; 
-    font-family:sans-serif;   
-    text-align: center;      
-    background-image: radial-gradient(circle at bottom center, rgb(8,90,165) 0%, rgb(8,90,165) 32%,transparent 32%, transparent 40%,transparent 40%, transparent 100%),radial-gradient(circle at center center, rgb(8,90,165) 0%, rgb(8,90,165) 23%,transparent 23%, transparent 36%,transparent 36%, transparent 100%),linear-gradient(90deg, rgb(7,76,138),rgb(7,76,138)); background-size: 35px 35px;
-    
-}
-
-.quiz-container {
-    max-width: 600px;
-    margin: 100px auto;
-    padding: 20px;    
+    padding: 0;
+  }
+  
+  h2 {
+    padding:40px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 5px;
-    background-image: linear-gradient(0deg, rgba(192, 241, 66,0.2) 0%, rgba(192, 241, 66,0.2) 16.667%,rgba(73, 212, 31,0.2) 16.667%, rgba(73, 212, 31,0.2) 33.334%,rgba(113, 222, 43,0.2) 33.334%, rgba(113, 222, 43,0.2) 50.001%,rgba(232, 251, 78,0.2) 50.001%, rgba(232, 251, 78,0.2) 66.668%,rgba(152, 231, 54,0.2) 66.668%, rgba(152, 231, 54,0.2) 83.335%,rgba(33, 202, 19,0.2) 83.335%, rgba(33, 202, 19,0.2) 100.002%),linear-gradient(135deg, rgba(192, 241, 66,0.2) 0%, rgba(192, 241, 66,0.2) 16.667%,rgba(73, 212, 31,0.2) 16.667%, rgba(73, 212, 31,0.2) 33.334%,rgba(113, 222, 43,0.2) 33.334%, rgba(113, 222, 43,0.2) 50.001%,rgba(232, 251, 78,0.2) 50.001%, rgba(232, 251, 78,0.2) 66.668%,rgba(152, 231, 54,0.2) 66.668%, rgba(152, 231, 54,0.2) 83.335%,rgba(33, 202, 19,0.2) 83.335%, rgba(33, 202, 19,0.2) 100.002%),linear-gradient(90deg, rgba(192, 241, 66,0.2) 0%, rgba(192, 241, 66,0.2) 16.667%,rgba(73, 212, 31,0.2) 16.667%, rgba(73, 212, 31,0.2) 33.334%,rgba(113, 222, 43,0.2) 33.334%, rgba(113, 222, 43,0.2) 50.001%,rgba(232, 251, 78,0.2) 50.001%, rgba(232, 251, 78,0.2) 66.668%,rgba(152, 231, 54,0.2) 66.668%, rgba(152, 231, 54,0.2) 83.335%,rgba(33, 202, 19,0.2) 83.335%, rgba(33, 202, 19,0.2) 100.002%),linear-gradient(90deg, rgb(238, 207, 232),rgb(127, 195, 255));
-    box-shadow: 10px 15px 20px rgb(12, 30, 90);
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background:linear-gradient(rgb(54, 85, 131),rgb(223, 227, 235));
+    
+  }
 
-h1 {   
-    font-size: 34px;
+  form:hover{
+    transform: translateY(10px);
+   
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
     margin-bottom: 20px;
-}
-
-#question-container {     
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-#options-container {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-}
-
-button {
-    background-color: #007BFF;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(54, 85, 131);
+  }
+  
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 3px;
+  }
+  
+  .alert-success {
+    background-color: #4CAF50;
+  }
+  
+  .alert-error {
+    background-color: #f44336;
+  }
 
-button:hover {
-    background-color: #0056b3;    
-}
-
-#result-container {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-@media screen and
-(max-width:1300px){
-    body{
-        background-color: rgb(91, 40, 211);
+  @media screen and
+    (max-width:1300px){
+        body{
+            background-color: rgb(4, 172, 149);
+        }
     }
-}
-
+  
